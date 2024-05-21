@@ -18,11 +18,12 @@ class Boid {
         if (this.position.y > canvas.height) this.position.y = 0;
         if (this.position.y < 0) this.position.y = canvas.height;
     }
-draw() {
-        context.fillStyle = 'white';
-        context.beginPath();
-        context.arc(this.position.x, this.position.y, 2, 0, Math.PI * 2);
-        context.fill();
+    
+    draw() {
+            context.fillStyle = 'white';
+            context.beginPath();
+            context.arc(this.position.x, this.position.y, 2, 0, Math.PI * 2);
+            context.fill();
     }
 }
 
